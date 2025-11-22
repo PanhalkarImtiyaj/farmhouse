@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Dream Farm House Project - Premium Farmhouse Plots Near SMK Corporation</title>
+  <meta name="description"
+    content="Invest in premium farmhouse plots near SMK Corporation with clear title, 300+ plants, zero flood risk, and 2x expected appreciation in 3-4 years. Legal safety guaranteed." />
+  <meta name="keywords"
+    content="farmhouse plots, SMK Corporation, Sangli farmhouse, premium plots, investment property, farmland, plantation, legal farmhouse" />
+  <meta name="author" content="Dream Farm House Project" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Dream Farm House Project - Premium Farmhouse Plots" />
+  <meta property="og:description"
+    content="Premium farmhouse plots with clear title, 300+ plants, and excellent returns. Located near SMK Corporation, Sangli." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dreamfarmhouse.com" />
+  <meta property="og:image" content="https://dreamfarmhouse.com/og-image.jpg" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dream Farm House Project - Premium Farmhouse Plots" />
+  <meta name="twitter:description"
+    content="Invest in premium farmhouse plots near SMK Corporation with guaranteed returns" />
+  <meta name="twitter:image" content="https://dreamfarmhouse.com/og-image.jpg" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Dream Farm House Project",
+      "description": "Premium farmhouse plots near SMK Corporation with clear title, 300+ plants, zero flood risk, and excellent appreciation potential",
+      "url": "https://dreamfarmhouse.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near SMK Corporation, Kupwad MIDC",
+        "addressLocality": "Sangli",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "16.85",
+        "longitude": "74.5"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "INR",
+        "description": "Premium farmhouse plots with all amenities"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "300+ Plants Per Plot"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Zero Flood Risk"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Clear Legal Title"
+        }
+      ]
+    }
+    </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Critical CSS to prevent FOUC - COMPLETE FIX -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: 'Rubik', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* COMPLETELY HIDE ALL CONTENT */
+    #root {
+      display: none !important;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Show loading screen */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      z-index: 999999;
+    }
+
+    /* Loading spinner */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+      margin-top: -30px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #6ab978;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      z-index: 9999999;
+    }
+
+    /* Show content when loaded */
+    body.app-loaded #root {
+      display: block !important;
+      opacity: 1;
+      visibility: visible;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    body.app-loaded::before,
+    body.app-loaded::after {
+      display: none !important;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Remove loading screen when React is ready -->
+  <script>
+    // Wait for React to mount
+    const checkReactReady = setInterval(function () {
+      const root = document.getElementById('root');
+      if (root && root.children.length > 0) {
+        clearInterval(checkReactReady);
+        setTimeout(function () {
+          document.body.classList.add('app-loaded');
+        }, 50);
+      }
+    }, 50);
+
+    // Fallback: show after 3 seconds max
+    setTimeout(function () {
+      document.body.classList.add('app-loaded');
+    }, 3000);
+  </script>
+</body>
+
+</html>

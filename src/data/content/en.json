@@ -1,0 +1,297 @@
+{
+    "common": {
+        "siteName": "Dream Farm House",
+        "tagline": "Premium Farmhouse Plots Near SMK Corporation",
+        "cta": {
+            "bookVisit": "Book Your Visit",
+            "downloadBrochure": "View Gallery",
+            "contactUs": "Contact Us",
+            "learnMore": "Learn More",
+            "viewGallery": "View Gallery"
+        },
+        "contact": {
+            "phone": "+91 XXXXX XXXXX",
+            "whatsapp": "+91 XXXXX XXXXX",
+            "email": "info@dreamfarmhouse.com",
+            "address": "Near SMK Corporation, Kupwad MIDC, Sangli, Maharashtra"
+        }
+    },
+    "header": {
+        "nav": {
+            "home": "Home",
+            "features": "Features",
+            "location": "Location",
+            "plantation": "Plantation",
+            "gallery": "Gallery",
+            "whyInvest": "Why Invest",
+            "pricing": "Pricing",
+            "contact": "Contact"
+        },
+        "languageToggle": "मराठी"
+    },
+    "footer": {
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Information",
+        "followUs": "Follow Us",
+        "disclaimer": "All information provided is subject to change. Please verify details before making any investment decisions.",
+        "copyright": "© 2025 Dream Farm House. All rights reserved."
+    },
+    "home": {
+        "hero": {
+            "title": "Dream Farm House",
+            "subtitle": "Premium Farmhouse Plots Near SMK Corporation",
+            "description": "Invest in your dream farmhouse with clear title, legal safety, and exceptional returns"
+        },
+        "boldFeatures": {
+            "title": "Why Choose Dream Farm House",
+            "features": [
+                {
+                    "title": "Clear Title – Legally Safe Investment",
+                    "description": "Complete legal documentation and clear property titles"
+                },
+                {
+                    "title": "Agreement as per Government Rules & Regulations",
+                    "description": "All agreements comply with government norms"
+                },
+                {
+                    "title": "Best Developed Farmhouse Property Near SMK Corporation Area",
+                    "description": "Premium location with excellent infrastructure"
+                },
+                {
+                    "title": "Property Prices Expected to Double in 3–4 Years",
+                    "description": "High appreciation potential in fast-developing area"
+                },
+                {
+                    "title": "Zero Flood Risk – Safe from Krishna River Flooding",
+                    "description": "Elevated location ensures complete flood safety"
+                },
+                {
+                    "title": "RCC Gutters for Proper Rainwater Drainage",
+                    "description": "Advanced drainage system for all-weather protection"
+                },
+                {
+                    "title": "Just 100 meters from Proposed 100 Ft Road with Multiple Access Routes",
+                    "description": "Excellent connectivity with multiple entry points"
+                }
+            ]
+        }
+    },
+    "features": {
+        "title": "Premium Features & Amenities",
+        "subtitle": "Everything you need for your dream farmhouse",
+        "list": [
+            {
+                "title": "9-meter / 27-feet Wide Internal Roads",
+                "description": "Spacious roads for easy vehicle movement"
+            },
+            {
+                "title": "Fully Developed Plots with Easy Resale",
+                "description": "Ready-to-use plots with high resale value"
+            },
+            {
+                "title": "Buy-back Guarantee After 3 Years",
+                "description": "Assured buy-back at market appreciated price"
+            },
+            {
+                "title": "Flexible Building Rules / Easy Approval",
+                "description": "Simple approval process for construction"
+            },
+            {
+                "title": "Low Property Tax",
+                "description": "Minimal annual tax burden"
+            },
+            {
+                "title": "Residential/Commercial/Industrial NA Possible",
+                "description": "Flexible land use options"
+            },
+            {
+                "title": "Good Ground Water Availability",
+                "description": "Abundant water supply for all needs"
+            },
+            {
+                "title": "Best Soil for Plantation",
+                "description": "Fertile soil ideal for farming"
+            },
+            {
+                "title": "Low Foundation Depth",
+                "description": "Reduced construction costs"
+            },
+            {
+                "title": "Safe for Family Gatherings / Overnight Stay",
+                "description": "Secure environment for family activities"
+            },
+            {
+                "title": "Supporting Staff Availability",
+                "description": "Maintenance and support staff on-site"
+            },
+            {
+                "title": "3 Years Plant Maintenance Included",
+                "description": "Free plantation care for three years"
+            },
+            {
+                "title": "Majority Plots as per Vastu",
+                "description": "Vastu-compliant plot orientations"
+            },
+            {
+                "title": "Skilled Manpower Available",
+                "description": "Access to construction workers"
+            },
+            {
+                "title": "High Chance of Coming Under SMK Corporation Limits",
+                "description": "Future municipal benefits expected"
+            },
+            {
+                "title": "Proper Size & Shape Plots",
+                "description": "Well-planned rectangular plots"
+            },
+            {
+                "title": "Immediate Possession",
+                "description": "Start building right away"
+            },
+            {
+                "title": "Water & Electricity Connection",
+                "description": "Essential utilities ready"
+            },
+            {
+                "title": "Drip Irrigation System Inside Each Plot",
+                "description": "Modern irrigation for efficient farming"
+            }
+        ]
+    },
+    "location": {
+        "title": "Prime Location – Everything Within Few Minutes",
+        "subtitle": "Strategic location with excellent connectivity",
+        "distances": [
+            {
+                "place": "Wanless Hospital",
+                "distance": "4 km"
+            },
+            {
+                "place": "Miraj Railway Station",
+                "distance": "5 km"
+            },
+            {
+                "place": "Sangli Collector Office",
+                "distance": "6 km"
+            },
+            {
+                "place": "Kupwad MIDC",
+                "distance": "Adjacent"
+            }
+        ],
+        "mapLabel": "View on Google Maps"
+    },
+    "plantation": {
+        "title": "300+ Plants Ready on Every Plot",
+        "subtitle": "Lush greenery and productive farming from day one",
+        "categories": [
+            {
+                "name": "Ornamental Plants",
+                "count": 6,
+                "description": "Beautiful decorative plants"
+            },
+            {
+                "name": "Fruit Plants",
+                "count": 10,
+                "description": "Variety of fruit-bearing trees"
+            },
+            {
+                "name": "Indian Local Plants",
+                "count": 6,
+                "description": "Native Indian species"
+            },
+            {
+                "name": "Indian Spice Plants",
+                "count": "3-4",
+                "description": "Fresh spices from your farm"
+            },
+            {
+                "name": "Medium-size Flower Beds",
+                "count": 15,
+                "description": "Colorful flower arrangements"
+            },
+            {
+                "name": "Small-size Flower Beds",
+                "count": 10,
+                "description": "Compact flower displays"
+            },
+            {
+                "name": "Special Ornamental Species",
+                "count": 6,
+                "description": "Rare and exotic plants"
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Gallery",
+        "subtitle": "Explore our beautiful farmhouse plots",
+        "categories": {
+            "farmhouses": "Farmhouses",
+            "plantation": "Plantation",
+            "drainage": "Drainage System",
+            "roads": "Internal Roads",
+            "maps": "Location Maps"
+        }
+    },
+    "whyInvest": {
+        "title": "Why Invest in Dream Farm House",
+        "subtitle": "Smart investment with guaranteed returns",
+        "reasons": [
+            {
+                "title": "2x Appreciation in 3–4 Years",
+                "description": "Property values expected to double due to rapid development near SMK Corporation"
+            },
+            {
+                "title": "Zero Flood Risk",
+                "description": "Elevated location ensures complete safety from Krishna River flooding"
+            },
+            {
+                "title": "Buy-back Guarantee",
+                "description": "Assured buy-back after 3 years at market appreciated price"
+            },
+            {
+                "title": "Fast-Developing Area",
+                "description": "Proximity to SMK Corporation and MIDC ensures rapid infrastructure growth"
+            },
+            {
+                "title": "Legal Clarity",
+                "description": "Clear titles and government-compliant agreements"
+            },
+            {
+                "title": "Ready Infrastructure",
+                "description": "Fully developed with roads, drainage, water, and electricity"
+            }
+        ]
+    },
+    "pricing": {
+        "title": "Pricing & Booking",
+        "subtitle": "Flexible payment options available",
+        "startingPrice": "Starting from ₹XX,XX,XXX",
+        "brochureDownload": "Download Detailed Brochure",
+        "bookingProcess": {
+            "title": "Simple Booking Process",
+            "steps": [
+                "Visit the site and select your plot",
+                "Book with token amount",
+                "Complete documentation",
+                "Get immediate possession"
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch for site visits and more information",
+        "form": {
+            "name": "Full Name",
+            "phone": "Phone Number",
+            "email": "Email Address",
+            "message": "Message",
+            "submit": "Submit Inquiry"
+        },
+        "visitBooking": {
+            "title": "Book a Site Visit",
+            "description": "Schedule a free site visit to explore the property"
+        },
+        "officeHours": "Office Hours: 9:00 AM - 6:00 PM (Mon-Sat)"
+    }
+}
