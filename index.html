@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/png" href="/faram_house_logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
-  <title>Dream Farm House Project - Premium Farmhouse Plots Near SMK Corporation</title>
+  <title>Dream Farm House </title>
   <meta name="description"
     content="Invest in premium farmhouse plots near SMK Corporation with clear title, 300+ plants, zero flood risk, and 2x expected appreciation in 3-4 years. Legal safety guaranteed." />
   <meta name="keywords"
@@ -136,6 +136,16 @@
       z-index: 9999999;
     }
 
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     /* Show content when loaded */
     body.app-loaded #root {
       display: block !important;
@@ -147,16 +157,6 @@
     body.app-loaded::before,
     body.app-loaded::after {
       display: none !important;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
     }
 
     @keyframes fadeIn {
@@ -184,7 +184,7 @@
         clearInterval(checkReactReady);
         setTimeout(function () {
           document.body.classList.add('app-loaded');
-        }, 50);
+        }, 500);
       }
     }, 50);
 
