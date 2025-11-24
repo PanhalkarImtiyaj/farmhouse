@@ -27,37 +27,39 @@ const buttonStyles = `
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, ${theme.colors.primary[600]} 0%, ${theme.colors.primary[700]} 100%);
-    color: ${theme.colors.text.inverse};
-    box-shadow: ${theme.shadows.md};
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); /* Darker Green */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .btn-primary:hover:not(:disabled) {
-    background: linear-gradient(135deg, ${theme.colors.primary[700]} 0%, ${theme.colors.primary[800]} 100%);
-    box-shadow: ${theme.shadows.lg};
+    background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
   }
 
   .btn-primary:active:not(:disabled) {
     transform: translateY(0);
-    box-shadow: ${theme.shadows.base};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .btn-secondary {
-    background: linear-gradient(135deg, ${theme.colors.secondary[500]} 0%, ${theme.colors.secondary[600]} 100%);
-    color: ${theme.colors.text.inverse};
-    box-shadow: ${theme.shadows.md};
+    background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%); /* Darker Brown */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .btn-secondary:hover:not(:disabled) {
-    background: linear-gradient(135deg, ${theme.colors.secondary[600]} 0%, ${theme.colors.secondary[700]} 100%);
-    box-shadow: ${theme.shadows.lg};
+    background: linear-gradient(135deg, #a1887f 0%, #8d6e63 100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
   }
 
   .btn-secondary:active:not(:disabled) {
     transform: translateY(0);
-    box-shadow: ${theme.shadows.base};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .btn-outline {
@@ -145,65 +147,65 @@ const buttonStyles = `
 `;
 
 const Button = ({
-    children,
-    variant = 'primary',
-    size = 'base',
-    icon = null,
-    iconPosition = 'left',
-    loading = false,
-    disabled = false,
-    onClick,
-    href,
-    type = 'button',
-    className = '',
-    ...props
+  children,
+  variant = 'primary',
+  size = 'base',
+  icon = null,
+  iconPosition = 'left',
+  loading = false,
+  disabled = false,
+  onClick,
+  href,
+  type = 'button',
+  className = '',
+  ...props
 }) => {
-    useEffect(() => {
-        injectStyles(buttonStyles, 'button-styles');
-    }, []);
+  useEffect(() => {
+    injectStyles(buttonStyles, 'button-styles');
+  }, []);
 
-    const classNames = [
-        'btn',
-        `btn-${variant}`,
-        size !== 'base' && `btn-${size}`,
-        icon && !children && 'btn-icon',
-        loading && 'btn-loading',
-        className,
-    ]
-        .filter(Boolean)
-        .join(' ');
+  const classNames = [
+    'btn',
+    `btn-${variant}`,
+    size !== 'base' && `btn-${size}`,
+    icon && !children && 'btn-icon',
+    loading && 'btn-loading',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
-    const content = (
-        <>
-            {icon && iconPosition === 'left' && <span className="btn-icon-left">{icon}</span>}
-            {children}
-            {icon && iconPosition === 'right' && <span className="btn-icon-right">{icon}</span>}
-        </>
-    );
+  const content = (
+    <>
+      {icon && iconPosition === 'left' && <span className="btn-icon-left">{icon}</span>}
+      {children}
+      {icon && iconPosition === 'right' && <span className="btn-icon-right">{icon}</span>}
+    </>
+  );
 
-    if (href) {
-        return (
-            <a
-                href={href}
-                className={classNames}
-                {...props}
-            >
-                {content}
-            </a>
-        );
-    }
-
+  if (href) {
     return (
-        <button
-            type={type}
-            className={classNames}
-            onClick={onClick}
-            disabled={disabled || loading}
-            {...props}
-        >
-            {content}
-        </button>
+      <a
+        href={href}
+        className={classNames}
+        {...props}
+      >
+        {content}
+      </a>
     );
+  }
+
+  return (
+    <button
+      type={type}
+      className={classNames}
+      onClick={onClick}
+      disabled={disabled || loading}
+      {...props}
+    >
+      {content}
+    </button>
+  );
 };
 
 export default Button;

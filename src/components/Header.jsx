@@ -29,19 +29,7 @@ const Header = () => {
   return (
     <header className="site-header">
       {/* Top Bar */}
-      <div className={`top-bar ${scrolled ? 'hidden' : ''}`}>
-        <div className="top-bar-container">
-          <div className="welcome-text">
-            <span>Namaskar 🙏, WELCOME TO {content.common.siteName.toUpperCase()}</span>
-          </div>
-          <div className="social-icons">
-            <a href="#" className="social-icon"><i className='bx bxl-facebook'></i></a>
-            <a href="#" className="social-icon"><i className='bx bxl-instagram'></i></a>
-            <a href="#" className="social-icon"><i className='bx bxl-youtube'></i></a>
-            <a href="#" className="social-icon"><i className='bx bxl-whatsapp'></i></a>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Navbar */}
       <div className="main-navbar">

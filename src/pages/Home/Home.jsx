@@ -59,9 +59,10 @@ const homeStyles = `
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(29, 78, 16, 0.4) 0%, rgba(45, 80, 22, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%);
     z-index: 1;
   }
+
 
   .hero-content {
     position: relative;
@@ -71,24 +72,52 @@ const homeStyles = `
   }
 
   .hero-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: ${theme.spacing[2]};
     padding: ${theme.spacing[2]} ${theme.spacing[4]};
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: ${theme.borderRadius.full};
     font-size: ${theme.typography.fontSize.sm};
-    font-weight: ${theme.typography.fontWeight.semibold};
-    margin-bottom: ${theme.spacing[6]};
-    animation: hero-badge-float 3s ease-in-out infinite;
+    font-weight: ${theme.typography.fontWeight.medium};
+    color: ${theme.colors.primary[50]};
+    margin-bottom: ${theme.spacing[4]};
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
-  @keyframes hero-badge-float {
-    0%, 100% {
-      transform: translateY(0);
+  .hero-promise {
+    display: block;
+    font-size: ${theme.typography.fontSize['4xl']};
+    font-weight: ${theme.typography.fontWeight.extrabold};
+    /* Rich Gold Gradient - More vibrant and premium */
+    background: linear-gradient(135deg, #FFC107 0%, #FF9800 50%, #FF6F00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: ${theme.spacing[6]};
+    /* Multiple shadows for depth and readability */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.9)) 
+            drop-shadow(0 4px 8px rgba(255,152,0,0.3));
+    animation: hero-promise-slide 1s ease-out 0.3s backwards;
+    font-family: ${theme.typography.fontFamily.heading};
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    /* Add subtle text stroke for better definition */
+    -webkit-text-stroke: 0.5px rgba(255, 152, 0, 0.2);
+  }
+
+  @keyframes hero-promise-slide {
+    from { 
+      opacity: 0; 
+      transform: translateY(-20px); 
     }
-    50% {
-      transform: translateY(-10px);
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
     }
   }
 
@@ -255,33 +284,67 @@ const homeStyles = `
 
   @media (max-width: ${theme.breakpoints.md}) {
     .hero {
-      min-height: 70vh;
-      padding: 140px ${theme.spacing[4]} ${theme.spacing[6]};
+      min-height: 80vh; /* Increased height for mobile */
+      padding: 120px ${theme.spacing[4]} ${theme.spacing[8]}; /* Adjusted padding */
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      width: 100%;
+      padding-top: ${theme.spacing[8]}; /* Push content down slightly */
+    }
+
+    .hero-badge {
+      font-size: ${theme.typography.fontSize.xs};
+      padding: ${theme.spacing[1]} ${theme.spacing[3]};
+      margin-bottom: ${theme.spacing[4]}; /* Increased margin */
+      white-space: normal;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .hero-promise {
+      font-size: ${theme.typography.fontSize['2xl']};
+      margin-bottom: ${theme.spacing[6]}; /* Increased margin significantly */
+      line-height: 1.3;
+      padding: 0 ${theme.spacing[2]};
     }
 
     .hero-title {
-      font-size: ${theme.typography.fontSize['4xl']};
+      font-size: ${theme.typography.fontSize['3xl']};
+      margin-bottom: ${theme.spacing[4]}; /* Increased margin */
+      line-height: 1.2;
     }
 
     .hero-subtitle {
-      font-size: ${theme.typography.fontSize.xl};
+      font-size: ${theme.typography.fontSize.lg};
+      margin-bottom: ${theme.spacing[4]};
+      line-height: 1.4;
     }
 
     .hero-description {
-      font-size: ${theme.typography.fontSize.lg};
+      font-size: ${theme.typography.fontSize.base};
+      margin-bottom: ${theme.spacing[6]};
+      display: none; /* Hide description on very small screens if needed, or keep it */
     }
 
     .hero-cta {
       flex-direction: column;
-      align-items: stretch;
+      gap: ${theme.spacing[3]};
+      padding: 0 ${theme.spacing[4]};
+    }
+
+    .hero-scroll-indicator {
+      bottom: ${theme.spacing[4]};
     }
 
     .stat-value {
-      font-size: ${theme.typography.fontSize['4xl']};
+      font-size: ${theme.typography.fontSize['3xl']};
     }
 
     .stat-label {
-      font-size: ${theme.typography.fontSize.base};
+      font-size: ${theme.typography.fontSize.sm};
     }
   }
 `;
@@ -330,7 +393,10 @@ const Home = () => {
 
         <div className="hero-content">
           <div className="hero-badge">
-            <i className='bx bx-star'></i> {content.common.tagline}
+            <i className='bx bxs-check-shield' style={{ color: '#ffd700', fontSize: '1.2em' }}></i> {content.common.tagline}
+          </div>
+          <div className="hero-promise">
+            {content.common.brandPromise}
           </div>
           <h1 className="hero-title">{content.home.hero.title}</h1>
           <p className="hero-subtitle">{content.home.hero.subtitle}</p>

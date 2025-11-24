@@ -13,16 +13,20 @@ html {
 body {
     font-family: 'Rubik', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 .app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 main {
     flex: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .app-loading {

@@ -3,6 +3,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Watermark from './components/Watermark/Watermark';
 import Home from './pages/Home/Home';
 import Features from './pages/Features/Features';
 import Location from './pages/Location/Location';
@@ -15,6 +16,7 @@ function App() {
   return (
     <LanguageProvider>
       <div className="app">
+        <Watermark />
         <Header />
         <main>
           <Home />
